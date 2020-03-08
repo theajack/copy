@@ -22,7 +22,7 @@
             position: fixed;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -60%);
         }
 
         #input {
@@ -36,11 +36,12 @@
             font-size: 15px;
             outline: none;
             border-radius: 3px;
+            background-color: #fffa;
         }
 
         .btn {
             margin-top: 10px;
-            background-color: #3e8df2;
+            background-color: #3e8df2aa;
             color: #fff;
             border: none;
             width: 100%;
@@ -53,7 +54,15 @@
         }
 
         .btn:hover {
-            background-color: #6bacff;
+            background-color: #6bacffaa;
+        }
+
+        .btn-half {
+            width: 48%;
+        }
+
+        .btn-half.right {
+            margin-left: 2%;
         }
 
         #title {
@@ -66,15 +75,20 @@
 
 <body>
     <div class='wrapper'>
-        <div id='title'>Copy-Util</div>
+        <div id='title'>🚀 Copy-Util</div>
         <textarea type="text" id="input" placeholder="Enter some text..."></textarea>
-        <button onclick="copyText()" class='btn'>Copy</button>
-        <button onclick="goGithub()" class='btn'>Document</button>
+        <button onclick="copyText()" class='btn'><i class="ei-copy"></i> Copy</button>
+        <button onclick="goGithubMain()" class='btn btn-half left'><i class="ei-github"></i> GitHub</button>
+        <button onclick="goGithub()" class='btn btn-half right'><i class="ei-book"></i> Document</button>
     </div>
+    <div id='error404'></div>
     <script src="https://cdn.jsdelivr.net/gh/theajack/copy/cdn/copyutil.latest.min.js"></script>
     <script>
         function goGithub() {
-            window.open('https://github.com/theajack/copy#copy-util--')
+            window.open('https://github.com/theajack/copy/blob/master/README.md#copy-util--')
+        }
+        function goGithubMain() {
+            window.open('https://github.com/theajack/copy')
         }
         function copyText() {
             alert(Copy({
@@ -82,6 +96,8 @@
             }) ? 'Copy successed!' : 'Copy failed!')
         }
     </script>
+    <script src="https://cdn.jsdelivr.net/gh/theajack/theajack.github.com/assets/js/jetter.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/theajack/theajack.github.com/assets/js/bg2.js"></script>
 </body>
 
 </html>

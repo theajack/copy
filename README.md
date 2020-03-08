@@ -3,7 +3,7 @@
 <p>
     <a href="https://www.npmjs.com/package/copy-util"><img src="https://img.shields.io/npm/v/copy-util.svg" alt="Version"></a>
     <a href="https://npmcharts.com/compare/copy-util?minimal=true"><img src="https://img.shields.io/npm/dm/copy-util.svg" alt="Downloads"></a>
-    <a href="https://cdn.jsdelivr.net/gh/theajack/copy/dist/copyutil.latest.min.js"><img src="https://img.shields.io/bundlephobia/minzip/copy-util.svg" alt="Size"></a>
+    <a href="https://cdn.jsdelivr.net/gh/theajack/copy/cdn/copyutil.latest.min.js"><img src="https://img.shields.io/bundlephobia/minzip/copy-util.svg" alt="Size"></a>
     <a href="https://github.com/theajack/copy/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/copy-util.svg" alt="License"></a>
     <a href="https://github.com/theajack/copy/search?l=javascript"><img src="https://img.shields.io/github/languages/top/theajack/copy.svg" alt="TopLang"></a>
     <a href="https://github.com/theajack/copy/issues"><img src="https://img.shields.io/github/issues-closed/theajack/copy.svg" alt="issue"></a>
