@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="keywords" content="copy,复制,js库,copy-util">
+    <meta name="description" content="简单易用、体积小巧的 web 复制文本 js 库">
+    <title>copy-util theajack</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theajack/easy-icon/dist/easy-icon.min.css">
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Microsoft Yahei;
+        }
+
+        .wrapper {
+            text-align: center;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #input {
+            font-family: Microsoft Yahei;
+            display: block;
+            border: 1px solid #ccc;
+            min-height: 150px;
+            min-width: 300px;
+            margin: 0 auto;
+            padding: 10px;
+            font-size: 15px;
+            outline: none;
+            border-radius: 3px;
+        }
+
+        .btn {
+            margin-top: 10px;
+            background-color: #3e8df2;
+            color: #fff;
+            border: none;
+            width: 100%;
+            min-height: 35px;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 2px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        #title {
+            font-weight: bold;
+            font-size: 30px;
+            margin-bottom: 20px
+        }
+    </style>
+</head>
+
+<body>
+    <div class='wrapper'>
+        <div id='title'>Copy-Util</div>
+        <textarea type="text" id="input" placeholder="Enter some text..."></textarea>
+        <button onclick="copyText()" class='btn'>Copy</button>
+        <button onclick="goGithub()" class='btn'>Document</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/theajack/copy/cdn/copyutil.latest.min.js"></script>
+    <script>
+        function goGithub() {
+            window.open('https://github.com/theajack/copy')
+        }
+        function copyText() {
+            alert(Copy({
+                el: '#input'
+            }) ? 'Copy successed' : 'Copy failed')
+        }
+    </script>
+</body>
+
+</html>

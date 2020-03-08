@@ -1,0 +1,23 @@
+{
+    "name": "copy-util",
+    "version": "1.0.1",
+    "description": "Easy to use and compact JS library for copying text",
+    "main": "index.js",
+    "scripts": {
+        "build": "node ./helper/build.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/theajack/copy.git"
+    },
+    "keywords": [
+        "copy",
+        "clipboard"
+    ],
+    "author": "theajack",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/theajack/copy/issues"
+    },
+    "homepage": "https://github.com/theajack/copy#readme"
+}
