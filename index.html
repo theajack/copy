@@ -22,7 +22,7 @@
             position: fixed;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -60%);
+            transform: translate(-50%, -55%);
         }
 
         #input {
@@ -76,7 +76,8 @@
 <body>
     <div class='wrapper'>
         <div id='title'>🚀 Copy-Util</div>
-        <textarea type="text" id="input" placeholder="Enter some text..."></textarea>
+        <div style="margin-bottom: 20px">Copy any text with one word</div>
+        <textarea type="text" id="input" placeholder="Type some text..."></textarea>
         <button onclick="copyText()" class='btn'><i class="ei-copy"></i> Copy</button>
         <button onclick="goGithubMain()" class='btn btn-half left'><i class="ei-github"></i> GitHub</button>
         <button onclick="goGithub()" class='btn btn-half right'><i class="ei-book"></i> Document</button>
