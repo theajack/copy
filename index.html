@@ -52,6 +52,10 @@
             outline: none;
         }
 
+        .btn:hover {
+            background-color: #6bacff;
+        }
+
         #title {
             font-weight: bold;
             font-size: 30px;
@@ -70,12 +74,12 @@
     <script src="https://cdn.jsdelivr.net/gh/theajack/copy/cdn/copyutil.latest.min.js"></script>
     <script>
         function goGithub() {
-            window.open('https://github.com/theajack/copy')
+            window.open('https://github.com/theajack/copy#copy-util--')
         }
         function copyText() {
             alert(Copy({
                 el: '#input'
-            }) ? 'Copy successed' : 'Copy failed')
+            }) ? 'Copy successed!' : 'Copy failed!')
         }
     </script>
 </body>
